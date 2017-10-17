@@ -31,13 +31,13 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
 
-            <!--&lt;!&ndash; Id service &ndash;&gt;-->
+            <!-- Id service -->
 
-            <!--<service android:name=".fcm.GshareFirebaseInstanceIdService">-->
-                <!--<intent-filter>-->
-                    <!--<action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>-->
-                <!--</intent-filter>-->
-            <!--</service>-->
+            <service android:name=".fcm.GshareFirebaseInstanceIdService">
+                <intent-filter>
+                    <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+                </intent-filter>
+            </service>
 
             <!--&lt;!&ndash; Service listening for any incoming messages &ndash;&gt;-->
 

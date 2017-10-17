@@ -81,18 +81,18 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
         values1.put(GshareContract.COLUMN_AUTHOR,"Ramji");
         values1.put(GshareContract.COLUMN_MESSAGE,"Message from Ramji");
         getContentResolver().insert(GshareProvider.GshareMessages.CONTENT_URI, values1);
-//
-//        //Grap details from FCM
-//        Bundle extras = getIntent().getExtras();
-//        if (extras != null && extras.containsKey("test")){
-//            Log.d(TAG,"Contains: "+ extras.getString("test"));
-//        }
-//
-//        // Get token from the ID Service you created and show it in a log
-//
-//        String token = FirebaseInstanceId.getInstance().getToken();
-//        String msg = getString(R.string.message_token_format, token);
-//        Log.d(TAG, msg);
+
+        //Grap details from FCM
+        Bundle extras = getIntent().getExtras();
+        if (extras != null && extras.containsKey("test")){
+            Log.d(TAG,"Contains: "+ extras.getString("test"));
+        }
+
+        // Get token from the ID Service you created and show it in a log
+
+        String token = FirebaseInstanceId.getInstance().getToken();
+        String msg = getString(R.string.message_token_format, token);
+        Log.d(TAG, msg);
     }
 
     @Override
