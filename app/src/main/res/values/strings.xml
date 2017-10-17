@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">GShare</string>
+
+    <!-- Menu Strings -->
+    <string name="menu_title_following_settings">Following</string>
+
+    <!-- Message and Notification Strings -->
+    <string name="notification_message">"New share from %1$s"</string>
+    <string name="toast_refresh">Refreshing Data</string>
+    <string name="message_token_format" translatable="false">InstanceID Token: %s</string>
+
+    <!-- Strings for Following Screen -->
+    <string name="follow_key_switch_ramji">key_ramji</string>
+    <string name="follow_key_switch_yeshwenth">key_yeshwenth</string>
+    <string name="follow_key_switch_pavithran">key_pavithran</string>
+    <string name="follow_key_switch_sindhu">key_sindhu</string>
+    <string name="follow_key_switch_viji">key_viji</string>
+
+    <string name="follow_title_switch_ramji">Ramji</string>
+    <string name="follow_title_switch_yeshwenth">Yeshwenth</string>
+    <string name="follow_title_switch_pavithran">Pavithran</string>
+    <string name="follow_title_switch_sindhu">Sindhu</string>
+    <string name="follow_title_switch_viji">Viji</string>
+
+    <string name="follow_summary_not_following">Not Following</string>
+    <string name="follow_summary_following">Following</string>
+</resources>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "620756143890",
+    "firebase_url": "https://gshare-e4093.firebaseio.com",
+    "project_id": "gshare-e4093",
+    "storage_bucket": "gshare-e4093.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:620756143890:android:02f77ea2df865a69",
+        "android_client_info": {
+          "package_name": "com.example.ramji.android.gshare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "620756143890-uu023tcpa5prdal6gg638tdfdinfl0ja.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrehG_vzERazAQnByqcyumqphovo6j5pw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
