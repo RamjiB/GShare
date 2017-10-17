@@ -74,14 +74,13 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
         // Start the loader
         getSupportLoaderManager().initLoader(LOADER_ID_MESSAGES, null, this);
 
-//        //Some dummy codes to view messages in app
-//        ContentValues values1 = new ContentValues();
-//        values1.put(GshareContract.COLUMN_DATE,986L);
-//        values1.put(GshareContract.COLUMN_AUTHOR_KEY,GshareContract.RAMJI_KEY);
-//        values1.put(GshareContract.COLUMN_AUTHOR,"Ramji");
-//        values1.put(GshareContract.COLUMN_MESSAGE,"Message from Ramji");
-//        getContentResolver().insert(GshareProvider.GshareMessages.CONTENT_URI, values1);
-
+        //Some dummy codes to view messages in app
+        ContentValues values1 = new ContentValues();
+        values1.put(GshareContract.COLUMN_DATE,5879L);
+        values1.put(GshareContract.COLUMN_AUTHOR_KEY,GshareContract.RAMJI_KEY);
+        values1.put(GshareContract.COLUMN_AUTHOR,"Ramji");
+        values1.put(GshareContract.COLUMN_MESSAGE,"Message from Ramji");
+        getContentResolver().insert(GshareProvider.GshareMessages.CONTENT_URI, values1);
 //
 //        //Grap details from FCM
 //        Bundle extras = getIntent().getExtras();

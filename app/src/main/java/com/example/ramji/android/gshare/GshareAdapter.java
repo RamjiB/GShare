@@ -25,8 +25,7 @@ public class GshareAdapter extends RecyclerView.Adapter<GshareAdapter.GshareView
     private Cursor mData;
     private static SimpleDateFormat sDateFormat = new SimpleDateFormat("dd MMM");
 
-    private static final long SECOND_MILLIS = 1000;
-    private static final long MINUTE_MILLIS = 60 * SECOND_MILLIS;
+    private static final long MINUTE_MILLIS = 60 * 1000;
     private static final long HOUR_MILLIS = 60 * MINUTE_MILLIS;
     private static final long DAY_MILLIS = 24 * HOUR_MILLIS;
 
@@ -57,13 +56,8 @@ public class GshareAdapter extends RecyclerView.Adapter<GshareAdapter.GshareView
         // the hour, etc.
         if (now - dateMillis < (DAY_MILLIS)) {
             if (now - dateMillis < (HOUR_MILLIS)) {
-                if (now - dateMillis < (MINUTE_MILLIS)){
-                    long seconds = Math.round((now - dateMillis) / SECOND_MILLIS);
-                    date = String.valueOf(seconds) + "s";
-                }else {
-                    long minutes = Math.round((now - dateMillis) / MINUTE_MILLIS);
-                    date = String.valueOf(minutes) + "m";
-                }
+                long minutes = Math.round((now - dateMillis) / MINUTE_MILLIS);
+                date = String.valueOf(minutes) + "m";
             } else {
                 long minutes = Math.round((now - dateMillis) / HOUR_MILLIS);
                 date = String.valueOf(minutes) + "h";
@@ -104,9 +98,8 @@ public class GshareAdapter extends RecyclerView.Adapter<GshareAdapter.GshareView
 
     @Override
     public int getItemCount() {
-        if (mData == null) {
-            return 0;
-        }
+        if (null == mData) return 0;
+
         return mData.getCount();
     }
 
